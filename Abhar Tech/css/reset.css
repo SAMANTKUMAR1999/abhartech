@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  margin: 0;
+  padding: 0;
+}
+a {
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

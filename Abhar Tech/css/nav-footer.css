@@ -1,0 +1,134 @@
+/* navbar */
+nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* position: fixed; */
+  /* background-color: #0b0b50; */
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+.navbar {
+  width: 100%;
+  height: 120px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.brand img {
+  width: 100px;
+  height: 100px;
+}
+.collapse {
+  display: none;
+}
+.collapse img {
+  height: 50px;
+  width: 50px;
+}
+.navs ul {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+.nav-links {
+  font-size: 100%;
+  font-weight: bolder;
+  margin: 0 1vw 0;
+  white-space: nowrap;
+  color: white;
+}
+
+.drop-menu {
+  display: none;
+  flex-direction: column;
+  padding: 0 1vw;
+  margin: 0 0 0 -1vw;
+  position: absolute;
+  background: black;
+  /* border-radius: 12px; */
+}
+.drop-links {
+  font-size: 100%;
+  font-weight: bolder;
+  margin: 1vh 1vw 0;
+  white-space: nowrap;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .navs {
+    width: 50%;
+    height: 88vh;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    background: #018cd3;
+    border-radius: 12px 0 0 12px;
+  }
+  .navs ul {
+    height: fit-content;
+    margin: 5vh 5vw;
+    flex-direction: column;
+  }
+  .navs ul li {
+    margin-top: 2vh;
+  }
+  .nav-links {
+    color: white;
+  }
+  .drop-menu {
+    position: relative;
+    margin: 2vh 0vh 0vh;
+  }
+  .collapse {
+    display: flex;
+  }
+}
+/* footer section */
+footer {
+  width: 100%;
+  background: #000;
+}
+.footer-section {
+  width: 100%;
+}
+footer img {
+  width: 120px;
+  height: 120px;
+}
+footer .hero-title {
+  color: #da7313;
+}
+footer .body {
+  color: #018cd3;
+}
+.foot-links {
+  font-size: 100%;
+  /* text-decoration: underline; */
+  color: #018cd3;
+}
+.e-mail {
+  color: #018cd3;
+  font-size: 150%;
+  margin-top: 5%;
+}
+footer .row {
+  align-items: flex-start;
+}
+footer .row:last-child {
+  margin: 30px 0;
+  justify-content: center;
+}
+footer .row:last-child p {
+  font-size: 80%;
+}
+@media screen and (max-width: 768px) {
+  footer .row:first-child {
+    display: none;
+  }
+}
